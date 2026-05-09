@@ -19,7 +19,26 @@ android {
             minifyEnabled false
         }
     }
+android {
+    // ... باقي إعداداتك (compileSdk، minSdk، إلخ)
 
+    // أضف هذا الحل لتوحيد إصدارات Kotlin
+    configurations.all {
+        resolutionStrategy {
+            force "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+            force "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+            force "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+        }
+    }
+}
+
+dependencies {
+    // تأكد من عدم وجود implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk7' أو jdk8
+    // ولكن يمكنك ترك السطر التالي إذا كان موجوداً:
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    // بقية dependencies الخاصة بك ...
+}
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
