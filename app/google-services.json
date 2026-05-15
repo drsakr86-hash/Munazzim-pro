@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "802675801699",
+    "project_id": "munazzim-pro",
+    "storage_bucket": "munazzim-pro.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:802675801699:android:d3bddd2a1e01e943fa0256",
+        "android_client_info": {
+          "package_name": "Com.salim.munazzim"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCx003n3VEsS1tRFu5Vz2MNzJ_Z3PWyb1Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
